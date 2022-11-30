@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+body {
+  font-family: "Arvo", serif;
+  background: #37648c;
+  color: #fff;
+}
+
+header {
+  max-height: 50px;
+  width: 100vw;
+  margin-left: -0.8rem;
+  margin-bottom: 0.9rem;
+
+  background-color: #254159;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-fluid {
+  width: 45px;
+}
+
+.input-group {
+  max-width: 300px;
+}
+
+.city {
+  font-size: 25px;
+}
+
+.date {
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /* From https://css.glass */
+  background: rgba(37, 65, 89, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid rgba(37, 65, 89, 0.3);
+}
+
+.container-temp {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 80px;
+  font-weight: 700;
+  color: #f2e205;
+  background: rgba(37, 65, 89, 0.8);
+  border-radius: 16px;
+  box-shadow: 5px 4px 30px rgba(0, 0, 0, 43%);
+  backdrop-filter: blur(8.3px);
+  -webkit-backdrop-filter: blur(8.3px);
+  border: 1px solid rgba(37, 65, 89, 0.3);
+}
+
+.weather {
+  font-size: 25px;
+}
+
+.low-high {
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .input-group {
+    max-width: 200px;
+  }
+
+  .card {
+    margin-top: 4rem;
+  }
+
+  .img-fluid {
+    width: 45px;
+  }
+}

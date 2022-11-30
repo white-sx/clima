@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+    <title>Clima</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <header>
+        <nav class="navbar">
+          <div class="container-fluid">
+            <a class="navbar-brand">  <img  class="img-fluid" src="./assets/img/clima.png" alt=""></a>
+          </div>
+        </nav>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nome da cidade..."
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+           
+          />
+          <div class="input-group-append">
+            <button
+              class="btn button2 "
+              type="button"
+              id="button-addon2"
+              style="background-color:#f2d22e;"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="card text-center shadow-lg" style="width: 26rem">
+          <div class="card-header text-light font-weight-bold">
+           PREVISÃO DO TEMPO
+          </div>
+
+          <div class="card-body">
+            <div class="city">Cidade Exemplo, BR</div>
+            <div class="date">Terça, 1 Dezembro 2020</div>
+            <div class="container-img">
+              <img src="./assets/icons/unknown.png" />
+            </div>
+            <div class="container-temp mx-4 my-3">
+              <div>22</div>
+              <span>°c</span>
+            </div>
+            <div class="weather py-2">Nublado</div>
+            <div class="low-high">22°c / 23°c</div>
+          </div>
+
+         
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f0e17cbf2f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/css/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
