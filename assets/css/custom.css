@@ -4,6 +4,49 @@ body {
   font-family: "Arvo", serif;
   background: #37648c;
   color: #fff;
+  position: relative;
+}
+
+.alert{
+  position: absolute;
+  z-index: 4;
+  width: 70%;
+  height: 10%;
+  top: -100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ visibility: hidden;
+  justify-content: space-around;
+
+}
+
+@keyframes fade {
+  0%{
+    top: -100%;
+  }
+  25%{
+    top: -75%;
+  }
+  50%{
+    top: -50%;
+  }
+  75%{
+    top: -25%;
+  }
+  100%{
+    top: 15%;
+  }
+}
+.noneDisplay{
+ top: 15%;
+ animation: fade 1s ease-in;
+ visibility: visible;
+ 
+}
+
+.alert svg{
+  height: 50px;
+  width: 46px;
 }
 
 header {
@@ -11,7 +54,6 @@ header {
   width: 100vw;
   margin-left: -0.8rem;
   margin-bottom: 0.9rem;
-
   background-color: #254159;
   display: flex;
   justify-content: space-between;
@@ -86,4 +128,12 @@ main {
   .img-fluid {
     width: 45px;
   }
+  .alert{
+    width: 90%;
+  }
+  .noneDisplay{
+    top: 14.5%;
+   
+    
+   }
 }
