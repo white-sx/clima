@@ -67,6 +67,7 @@ main {
 
 .weather {
   font-size: 25px;
+ text-transform: capitalize;
 }
 
 .low-high {

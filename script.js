@@ -78,7 +78,7 @@ function searchResults(city) {
           alert(error.message)
       })
       .then(response => {
-        console.log(response)
+        
           displayResults(response)
       });
 }
@@ -98,10 +98,10 @@ function displayResults(weather) {
   temp_number.innerHTML = temperature;
   temp_unit.innerHTML = `°c`;
 
-  weather_t = weather.weather[0].description;
-  weather_t.innerText = capitalizeFirstLetter(weather_tempo)
-
-  low_high.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
+  console.log(weather.main)
+   weather_t.innerText = weather.weather[0].description
+  
+   low_high.innerText = `${Math.round(weather.main.temp_min)}°c / ${Math.round(weather.main.temp_max)}°c`;
 }
 
 function dateBuilder(d) {
